@@ -99,15 +99,16 @@
 		- [x] Saved Preferences
 			- [x] Theming
 			- [ ] ~~Map Setting (not in alpha)~~
+
 ## Backend 
 
-### Data Management/Flask
-- [ ] Automatic Suggestions
-	- [ ] Edit Locations
-	- [ ] Edit Public Spaces
-	- [ ] Categories
-		- [ ] Create Categories
-		- [ ] Edit Categories
+- Data Management/Flask
+	- [ ] Automatic Suggestions
+		- [ ] Edit Locations
+		- [ ] Edit Public Spaces
+		- [ ] Categories
+			- [ ] Create Categories
+			- [ ] Edit Categories
 ### Database/Supabase
 - [x] Have Scheduled Backups 
 - [ ] ~~Have better caching for buckets (not in alpha)~~
