@@ -15,14 +15,14 @@
 			- [ ] Determine Other Sources here
 			- [ ] This means 80% goes to paying for expenses to maintain the site and to support the team. 
 		- **General Expenses**
-			- **Backend**: $20 a month to Supabase for their BaaS (Backend as a service)
+			- **Backend**: $20 a month to Supabase for their BaaS 
 			- **Hosting**: 
 				- $20 a month to Vercel for their Pro Plan
 				- $6 a month to Digital Ocean for their VPS to perform automatic actions. 
 	- [ ] Open Source:
 		- [ ] We Aim to Open Source isolated aspects of our Technical Architecture when it's safe to do so; in other words it needs to be reviewed to make sure no flaws that could harm our users are exposed. 
 		- [ ] Potential things to Open Source
-			- [ ] The UI and ways we calculate the six different safety scores
+			- [ ] The UI and ways we calculate the four different safety scores
 			- [ ] Custom Tip Tap Editor Instance
 			- [ ] Donation Tracker source code
 
@@ -77,8 +77,8 @@
 		- [ ] Data Management
 			- [ ] View Data Sources and Generate New Data
 	- [x] Admin have access to correct permissions using Next_Auth, the rest is completely limited. 
-- [ ] User Content (I need to merge the PR and most of this will be complete)
-	- [x] ~~User Content Preferences (I'm Scrapping This for Now)~~
+- [ ] User Content
+	- [x] ~~User Content Preferences (not in alpha)~~
 	- [ ] User Dashboard
 		- [x] Overview/Home
 		- [x] Contributions/Reporting
@@ -90,7 +90,7 @@
 				- [x] Suggesting New Spaces
 				- [x] Suggesting New Categories
 			- [ ] When they suggest any new content or a general suggestion is tracked, it should trigger a free plan
-		- [x] Saved Locations View (refactor this)
+		- [x] Saved Locations View
 		- [x] Spaces
 			- [x] Create Space
 			- [x] Saved/Created Spaces View
@@ -98,28 +98,19 @@
 			- [x] Edit Bio
 		- [x] Saved Preferences
 			- [x] Theming
-			- [ ] ~~Map Setting (I'm Scrapping This for Now)~~
+			- [ ] ~~Map Setting (not in alpha)~~
 ## Backend 
 
 ### Data Management/Flask
-- [ ] Automatic Suggestions (need to deploy this to docker)
+- [ ] Automatic Suggestions
 	- [ ] Edit Locations
-		- mostly done other then deploymenet
 	- [ ] Edit Public Spaces
 	- [ ] Categories
 		- [ ] Create Categories
 		- [ ] Edit Categories
 ### Database/Supabase
 - [x] Have Scheduled Backups 
-- [ ] ~~Have better caching for buckets (not in beta)
+- [ ] ~~Have better caching for buckets (not in alpha)~~
 
-### Image Optimization (not in beta)
-- [ ] Before any images are uploaded, optimize them 
-## Security
-
-- [ ] Ensure every single table has RLS enabled with the correct permissions
-- [ ] Make the ID for any publicly editable table uneditable. 
-	- [ ] I.E Users, Suggestions/Contributions, User Spaces
-- [ ] Ensure proper rate limiting 
-	- [ ] add alert when triggered
-- [ ] add robots.tx 
+### ~~Image Optimization (not in alpha)~~
+- [ ] ~~Before any images are uploaded, optimize them~~
