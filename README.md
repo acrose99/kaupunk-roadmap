@@ -109,9 +109,9 @@
 		- [ ] Categories
 			- [ ] Create Categories
 			- [ ] Edit Categories
-### Database/Supabase
-- [x] Have Scheduled Backups 
-- [ ] ~~Have better caching for buckets (not in alpha)~~
+- Database/Supabase
+	- [x] Have Scheduled Backups 
+	- [ ] ~~Have better caching for buckets (not in alpha)~~
 
-### ~~Image Optimization (not in alpha)~~
-- [ ] ~~Before any images are uploaded, optimize them~~
+- ~~Image Optimization (not in alpha)~~
+	- [ ] ~~Before any images are uploaded, optimize them~~
