@@ -32,14 +32,19 @@
 		- [x] Search for Locations, Spaces, Categories
 		- [x] Cards, Map, Table View
 	- [ ] Locations
-		- [ ] Location Detail Page
-			- [ ] Need to redesign this. 
-	- [x] Spaces
+		- [x] Location Detail Page
+			- [x] Need to redesign this. 
+		- [ ] Fix SEO descriptions 
+	- [ ] Spaces
 		- [x] Dedicated Spaces Filter
 		- [x] Public Space Detail Page 
+		- [ ] link spaces within spaces 
 	- [x] Categories
 		- [x] Dedicated Categories Page with a view of all categories 
 		- [x] Category Detail Page
+	- [x] Countries 
+		- [x] Dedicated Countries Page with a view of all locations per country 
+		- [x] redesign 
 	- [x] Featured Content
 		- [x] Featured Spaces
 		- [x] Featured Location
@@ -48,10 +53,13 @@
 			- Mostly Done. Refactor Once
 		- [ ] Comparison Page
 		- [ ] Team Page 
-		- [ ] Transparency Trackers (see payment section for details)
+		- [ ] Transparency Trackers (see [[Beta things pending#Payments/Compliance]] for details)
 			- [ ] Donation Tracker Page
 			- [ ] Profit Transparency Page
-	- [ ] Misc Stuff like Privacy Policy, Site Map, etc
+	- [ ] Blog/Annoucements
+		- [ ] will use an internal creation page
+		- [ ] have a minimal static setup. 
+	- [ ] Bureaucratic Stuff like Privacy Policy, Site Map, etc
 - [ ] Admin Content
 	- [ ] Admin Dashboard
 		- [x] Manual Editing/Creating
@@ -68,6 +76,8 @@
 		- [ ] Automatic Suggestions (need to deploy this to docker)
 			- [ ] Edit Locations
 				- mostly done other then deploymenet
+				- [ ] fix that the edit location tab  is not changing the modified location/previews
+				- [ ] Client side exceptions are occurring here for some reason on the Location Preview for Helwan Observatory. 
 			- [ ] Edit Public Spaces
 			- [ ] Categories
 				- [ ] Create Categories
@@ -77,8 +87,8 @@
 		- [ ] Data Management
 			- [ ] View Data Sources and Generate New Data
 	- [x] Admin have access to correct permissions using Next_Auth, the rest is completely limited. 
-- [ ] User Content
-	- [x] ~~User Content Preferences (not in alpha)~~
+- [ ] User Content (I need to merge the PR and most of this will be complete)
+	- [x] ~~User Content Preferences~~
 	- [ ] User Dashboard
 		- [x] Overview/Home
 		- [x] Contributions/Reporting
@@ -91,27 +101,45 @@
 				- [x] Suggesting New Categories
 			- [ ] When they suggest any new content or a general suggestion is tracked, it should trigger a free plan
 		- [x] Saved Locations View
-		- [x] Spaces
+		- [ ] Spaces
 			- [x] Create Space
 			- [x] Saved/Created Spaces View
+			- [ ] link spaces within spaces 
 		- [x] Profile
 			- [x] Edit Bio
 		- [x] Saved Preferences
 			- [x] Theming
-			- [ ] ~~Map Setting (not in alpha)~~
+			- [ ] ~~Map Setting~~
+- [ ] Mobile Issues
+	- [x] Radix Tooltip, Hovercard not working on Mobile devices. See https://github.com/radix-ui/primitives/issues/955#issuecomment-1798201143
+		- [x] Impacts Themeing
+		- [x] Impacts signing out and avatar view 
+		- [x] Impacts preview contents for cards 
+		- [x] Impacts info explanation for tooltip on location safety
+		- [x] Impacts approval/rejection on auto suggestions 
+	- [x] The comparison/mission page isent working and looks terrible
+	- [x] Public Spaces main page not working 
+	- [x] Public Spaces detail page not working 
+	- [x] Navigation Menu should auto close after anything is clicked 
+	- [x] User isent able to see all of their spaces
+	- [ ] full screen on mapbox is not available 
+		- [ ] https://github.com/mapbox/mapbox-gl-js/issues/7990
+	- [x] Auto Suggestions very hard to use 
 
 ## Backend 
 
-- Data Management/Flask
-	- [ ] Automatic Suggestions
-		- [ ] Edit Locations
-		- [ ] Edit Public Spaces
-		- [ ] Categories
-			- [ ] Create Categories
-			- [ ] Edit Categories
-- Database/Supabase
-	- [x] Have Scheduled Backups 
-	- [ ] ~~Have better caching for buckets (not in alpha)~~
+### Data Management/Flask
+- [ ] Automatic Suggestions (need to deploy this to docker)
+	- [ ] Edit Locations
+		- mostly done other then deploymenet
+	- [ ] Edit Public Spaces
+	- [ ] Categories
+		- [ ] Create Categories
+		- [ ] Edit Categories
+- [x] RPC Functions covering most scenarios (a lot of work but hard to explain publicly)
+### Database/Supabase
+- [x] Have Scheduled Backups 
+- [ ] ~~Have better caching and bucket controls~~
 
-- ~~Image Optimization (not in alpha)~~
-	- [ ] ~~Before any images are uploaded, optimize them~~
+### Image Optimization
+- [ ] ~~Before any images are uploaded, optimize them~~ 
