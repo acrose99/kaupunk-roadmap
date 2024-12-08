@@ -137,6 +137,7 @@
 		- [ ] Create Categories
 		- [ ] Edit Categories
 - [x] RPC Functions covering most scenarios (a lot of work but hard to explain publicly)
+
 ### Database/Supabase
 - [x] Have Scheduled Backups 
 - [ ] ~~Have better caching and bucket controls~~
